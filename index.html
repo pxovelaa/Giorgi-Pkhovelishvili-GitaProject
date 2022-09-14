@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Domains</title>
+</head>
+
+<body>
+
+    <section id="header" class="container">
+        <div id="mobile">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+        <a href="index.html"><img src="images/Symbols@2x.png" class="logo" alt="domenebi.ge"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="#"><i class="fa-regular fa-bell fa-lg"></i></a></li>
+                <li class="cart"><a class="cart-number" href="cart.html"><i class="fa-solid fa-cart-shopping fa-lg " ></i><span>0</span></a></li>
+                <li><a href="#"><i class="fa-regular fa-user fa-lg"></i><span class="user">kancha.co </span> <i id="down-arrow"
+                            class="fa-solid fa-arrow-down fa-2xs"></i></a></li>
+                <li><a href="#"><img src="images/Layer 2.svg" alt="flag" class="flag"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="header" class="container secondNav">
+        <div>
+            <ul id="navbar1">
+                <li><a href="#">დომენი</a></li>
+                <li><a href="#">ტრანსფერი</a></li>
+                <li><a href="#">ჰოსტინგი</a></li>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">ვებგვერდი</a></li>
+                <li><a href="#">დომენის მარკეტი</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul id="navbar1">
+                <li><a href="#">ჩვენს შესახებ</a></li>
+                <li><a href="#">ფასები</a></li>
+                <li><a href="#">ბლოგი</a></li>
+                <li><a href="#">დახმარება</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="shop">
+        <div class="container">
+            <div class="imgText">
+                <h2 class="imgText1">გაყიდე და იყიდე დომენი მარტივად</h2>
+            </div>
+        </div>
+        <div id='mobile-sort'>
+            <div class="mobile-sort1">
+                <a id="mobile-sort1">სორტირება</a>
+            </div>
+            <div class="mobile-sort2">
+                <a id="mobile-sort1">სორტირება</a>
+            </div>
+        </div>
+        <div class="sort container">
+            <div>
+                <h3 class="grey">დომენები მარკეტზე: <span class="bold">703</span></h3>
+            </div>
+            <div>
+                <ul id="sortFlex">
+                    <li>სორტირება:</li>
+                    <li><a href="#" class="active">დამატების თარიღით <i class="fa-solid fa-arrow-up-wide-short"></i></a>
+                    </li>
+                    <li><a href="#">ვადის ამოწურვით</a></li>
+                    <li><a href="#"> ფასით</a></li>
+                    <li><a href="#">ანბანით</a></li>
+                </ul>
+
+            </div>
+            <div>
+                <a href="#" class="question">როგორ გავყიდო დომენი?</a>
+            </div>
+        </div>
+        <div class="sort2 container">
+            <div class="sort2-first">
+                <div class="sort-active">
+                    <h4>ფილტრი</h4> <a href="#"><i id="exit" class="fa-solid fa-x"></i></a>
+                </div>
+                <form class="forms">
+                    <input type="text" name="search" class="search-item" placeholder="სახელით ძიება">
+                    <div class="range">
+                        <h3>ფასი</h3>
+                        <div class="price-in">
+                            <div class="field">
+                                <input type="number" class="in-min" id="in-min" value="50" onchange="rangeFunction(this.value)">
+                            </div>
+                            <div class="field">
+                                <input type="number" class="in-max" value="50000" >
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <div class="pro"></div>
+                        </div>
+                        <div class="range-in">
+                            <input type="range" class="range-min" min="0" max="50000" value="50" >
+                            <input type="range" class="range-max" min="0" max="50000" value="50000">
+                        </div>
+                    </div>
+                    <div class="range simbol">
+                        <h3>სიმბოლოების რაოდონობა</h3>
+                        <div class="price-in">
+                            <div class="field">
+                                <input type="number" class="in-min" value="0">
+                            </div>
+                            <div class="field">
+                                <input type="number" class="in-max" value="26">
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <div class="pro"></div>
+                        </div>
+                        <div class="range-in">
+                            <input type="range" class="range-min" min="0" max="26" value="0">
+                            <input type="range" class="range-max" min="0" max="26" value="26">
+                        </div>
+                    </div>
+
+                    <div class="categoris">
+                        <h3>კატეგორიები</h3>
+                        <input type="checkbox" id="businnes" name="business" value="ბიზნესი">
+                        <label for="businnes">ბიზნესი</label><br>
+                        <input type="checkbox" id="material" name="material" value="უძრავი ქონება">
+                        <label for="material">უძრავი ქონება</label><br>
+                        <input type="checkbox" id="car" name="car" value="ავტო">
+                        <label for="car">ავტო</label><br>
+                        <input type="checkbox" id="medicin" name="medicin" value="მედიცინა">
+                        <label for="medicin">მედიცინა</label><br>
+                        <input type="checkbox" id="technology" name="technology" value="ტექნოლოგიები">
+                        <label for="technology">ტექნოლოგიები</label><br>
+                        <input type="checkbox" id="gaming" name="gaming" value="თამაშები">
+                        <label for="gaming">თამაშები</label><br>
+                        <input type="checkbox" id="relax" name="relax" value="გართობა და დასვენება">
+                        <label for="relax">გართობა და დასვენება</label><br>
+                        <input type="checkbox" id="media" name="media" value="მედია">
+                        <label for="media">მედია</label><br>
+                        <input type="checkbox" id="education" name="education" value="განათლება">
+                        <label for="education">განათლება</label><br>
+                        <input type="checkbox" id="comerce" name="comerce" value="კომერცია">
+                        <label for="comerce">კომერცია</label><br>
+                        <input type="checkbox" id="finance" name="finance" value="ფინანსები">
+                        <label for="finance">ფინანსები</label><br>
+                        <input type="checkbox" id="businnes" name="business" value="ბიზნესი">
+                        <label for="businnes">ბიზნესი</label><br>
+                    </div>
+                    <div class="domZone">
+                        <h3>დომენის ზონა</h3>
+                        <input type="checkbox" id="ge" name="ge" value=".ge">
+                        <label for="ge">.ge</label><br>
+                        <input type="checkbox" id="com" name="com" value=".com.ge">
+                        <label for="com">.com.ge</label><br>
+                        <input type="checkbox" id="org" name="org" value=".org.ge">
+                        <label for="org">.org.ge</label><br>
+                        <input type="checkbox" id="edu" name="edu" value=".edu.ge">
+                        <label for="edu">.edu.ge</label><br>
+                        <input type="checkbox" id="school" name="school" value=".school.ge">
+                        <label for="school">.school.ge</label><br>
+                    </div>
+                    <input type="text" name="search" class="search-market" placeholder="market">
+                </form>
+
+            </div>
+            <div id="sort2-second">
+                
+            </div>
+        </div>
+    </section>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
